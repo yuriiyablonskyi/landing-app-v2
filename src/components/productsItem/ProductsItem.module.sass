@@ -1,0 +1,29 @@
+@import '../../styles/vars'
+@import '../../styles/mixins'
+
+.item
+  flex: 0 0 calc(33.33% - 20px)
+  border: 2px solid $cloud
+  padding: 50px 20px
+  margin-bottom: 30px
+  @media (max-width: $mobile)
+    width: 330px
+    flex: none
+
+.img
+  display: block
+  width: 290px
+  height: auto
+  margin: 0 auto
+  margin-bottom: 15px
+  border-radius: 5px
+
+.title
+  font-size: 20px
+  font-weight: 700
+  color: $white
+  margin-bottom: 20px
+  text-align: center
+
+.desc
+  font-size: 16px

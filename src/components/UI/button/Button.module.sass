@@ -1,0 +1,12 @@
+@import '../../../styles/vars'
+@import '../../../styles/mixins'
+
+.btn
+  color: $green
+  padding: 6px 18px
+  @include border(1px,$green, 5px)
+  transition: $transition
+
+  &:hover
+    border-color: transparent
+    transform: scale(1.1)

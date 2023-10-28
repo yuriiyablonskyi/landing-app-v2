@@ -1,0 +1,15 @@
+@import '../../styles/vars'
+@import '../../styles/mixins'
+
+.item
+  &:not(:last-child)
+    margin-right: 25px
+    color: $cloud
+    transition: $transition
+
+  &:hover
+    color: $white
+
+  @media (max-width: $mobile)
+    margin-right: 0
+    margin-bottom: 10px

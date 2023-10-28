@@ -1,0 +1,15 @@
+@import '../../styles/vars'
+@import '../../styles/mixins'
+
+.header
+  max-width: 1400px
+  margin: 0 auto
+  padding: 20px 30px
+  @include flex(space-between, center)
+  @media (max-width: $small-mobile)
+    padding: 0 15px
+
+.img
+  display: block
+  max-width: 80px
+  height: auto
