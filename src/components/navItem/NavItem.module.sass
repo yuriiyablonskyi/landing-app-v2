@@ -2,14 +2,18 @@
 @import '../../styles/mixins'
 
 .item
+  @media (max-width: $mobile)
+    margin-bottom: 10px
+
   &:not(:last-child)
     margin-right: 25px
     color: $cloud
     transition: $transition
+    @media (max-width: $mobile)
+      margin-right: 0
 
   &:hover
     color: $white
 
-  @media (max-width: $mobile)
-    margin-right: 0
-    margin-bottom: 10px
+  &:last-of-type
+    margin-bottom: 25px
