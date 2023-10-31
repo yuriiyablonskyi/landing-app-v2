@@ -24,7 +24,7 @@ const Header = ({ onVisible }) => {
         <Button text="Log in" onVisible={onVisible} />
       </nav>
 
-      <Toggle toggleNav={toggleNav} />
+      <Toggle onToggleNav={toggleNav} isActive={isNavOpen}  />
     </header>
   )
 }
